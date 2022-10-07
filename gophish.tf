@@ -93,3 +93,11 @@ resource "aws_instance" "gophish-web" {
     Name = "gophish-web"
   }
 }
+
+output "instance_public_dns" {
+  value = "${aws_instance.gophish-web.public_dns}"
+}
+
+output "instance_public_IP" {
+  value = "${aws_instance.gophish-web.public_ip}"
+}

@@ -16,6 +16,6 @@ Terraform script for deploying gophish to AWS
 3. terraform init
 4. terraform plan
 5. terraform apply
-6. ssh -i gophish-key.pem ubuntu@<ec2 instance public dns or public IP>
+6. ssh -i gophish-key.pem ubuntu@\<ec2 instance public dns or public IP\>
 7. cat /var/log/cloud-init-output.log | grep "the password"
-8. Visit https://<ec2 instance public dns or public IP>:3333 and log in with the admin username and password.
+8. Visit https://\<ec2 instance public dns or public IP\>:3333 and log in with the admin username and password.
